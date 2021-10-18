@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EbanxExam.Application\EbanxExam.Application.csproj" />
     <ProjectReference Include="..\EbanxExam.Domain\EbanxExam.Domain.csproj" />
   </ItemGroup>
 

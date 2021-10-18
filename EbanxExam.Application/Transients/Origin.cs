@@ -1,6 +1,6 @@
 ﻿namespace EbanxExam.Application.Transients
 {
-  public class Origin
+  public class Origin : Account
   {
   }
 }

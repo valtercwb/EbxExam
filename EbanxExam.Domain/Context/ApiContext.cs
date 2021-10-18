@@ -9,6 +9,6 @@ namespace AspnetCore_EFCoreInMemory.Models
       : base(options)
     { }
 
-    public DbSet<Destination> Account { get; set; }
+    public DbSet<Account> Account { get; set; }
   }
 }

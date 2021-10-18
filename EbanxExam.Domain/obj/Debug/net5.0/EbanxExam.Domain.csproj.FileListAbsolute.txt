@@ -25,3 +25,15 @@ C:\Users\Valter\Documents\GitHub\EbExam\EbanxExam.Domain\bin\Debug\net5.0\EbanxE
 C:\Users\Valter\Documents\GitHub\EbExam\EbanxExam.Domain\bin\Debug\net5.0\EbanxExam.Domain.dll
 C:\Users\Valter\Documents\GitHub\EbExam\EbanxExam.Domain\bin\Debug\net5.0\ref\EbanxExam.Domain.dll
 C:\Users\Valter\Documents\GitHub\EbExam\EbanxExam.Domain\bin\Debug\net5.0\EbanxExam.Domain.pdb
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\bin\Debug\net5.0\EbanxExam.Domain.deps.json
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\bin\Debug\net5.0\EbanxExam.Domain.dll
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\bin\Debug\net5.0\ref\EbanxExam.Domain.dll
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\bin\Debug\net5.0\EbanxExam.Domain.pdb
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\obj\Debug\net5.0\EbanxExam.Domain.csproj.AssemblyReference.cache
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\obj\Debug\net5.0\EbanxExam.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\obj\Debug\net5.0\EbanxExam.Domain.AssemblyInfoInputs.cache
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\obj\Debug\net5.0\EbanxExam.Domain.AssemblyInfo.cs
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\obj\Debug\net5.0\EbanxExam.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\obj\Debug\net5.0\EbanxExam.Domain.dll
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\obj\Debug\net5.0\ref\EbanxExam.Domain.dll
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\obj\Debug\net5.0\EbanxExam.Domain.pdb

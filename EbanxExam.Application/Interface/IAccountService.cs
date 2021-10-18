@@ -1,14 +1,14 @@
 ﻿using EbanxExam.Application.Enum;
 using EbanxExam.Application.Transients;
-using System;
 
 namespace EbanxExam.Application.Interface
 {
   public interface IAccountService
   {
-    decimal GetBalance(long accountId);
-
-    Origin Withdraw(TransactionType type, string origin, decimal amount);
-    Tuple<Origin, Destination> Transfer(TransactionType type, string origin, decimal amount = 10);
+    void Reset();
+    decimal? Balance(string accountId);
+    Transfer Transfer(TransactionType type, string origin, string destination, decimal amount);
+    Destination Deposit(TransactionType type, string origin, string destination, decimal amount);
+    Origin Withdraw(TransactionType type, string origin, string destination, decimal amount);
   }
 }

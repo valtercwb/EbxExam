@@ -1,21 +1,104 @@
-﻿namespace EbanxExam.Application
+﻿using AutoMapper;
+using EbanxExam.Application.Enum;
+using EbanxExam.Application.Interface;
+using EbanxExam.Application.Transients;
+using EbanxExam.Domain.Interface;
+using System.Transactions;
+
+namespace EbanxExam.Application
 {
-  public class AccountService
+  public class AccountService : IAccountService
   {
+    readonly IMapper _mapper;
+    readonly IAccountRepository _accountRepository;
 
-    public readonly EbanxExam.Domain.ApiContext
-
-    public AccountService()
+    public AccountService(IMapper mapper, IAccountRepository accountRepository)
     {
-
+      _mapper = mapper;
+      _accountRepository = accountRepository;
     }
 
-    public decimal GetAccountById(long accountId)
+    void IAccountService.Reset()
     {
+      _accountRepository.Reset();
+    }
 
-      var balance = 1;
+    decimal? IAccountService.Balance(string accountId)
+    {
+      return _accountRepository.GetBalance(accountId);
+    }
 
-      return 1;
+    Transfer IAccountService.Transfer(TransactionType type, string origin, string destination, decimal amount)
+    {
+      var originAccount = _accountRepository.GetAccount(origin);
+      var destinationAccount = _accountRepository.GetAccount(destination);
+      var transfer = new Transfer();
+
+      if (originAccount != null && destinationAccount != null)
+      {
+        originAccount.Balance -= amount;
+        destinationAccount.Balance += amount;
+
+        using (var scope = new TransactionScope())
+        {
+          try
+          {
+            var originAccountResponse = _accountRepository.Update(originAccount);
+            var destinationAccountResponse = _accountRepository.Update(destinationAccount);
+            scope.Complete();
+
+            transfer.Destination = _mapper.Map<Destination>(destinationAccountResponse);
+            transfer.Origin = _mapper.Map<Origin>(originAccountResponse);
+            return transfer;
+          }
+          catch (System.Exception)
+          {
+            scope.Dispose();
+          }
+        }
+      }
+
+      return null;
+    }
+
+    Destination IAccountService.Deposit(TransactionType type, string origin, string destination, decimal amount)
+    {
+      var accountDestination = _accountRepository.GetAccount(destination);
+
+      if (accountDestination == null && destination != default)
+      {
+        return _mapper.Map<Destination>(_accountRepository.CreateAccount(new Domain.Models.Account { Id = destination, Balance = amount }));
+      }
+      else
+      {
+        accountDestination.Balance += amount;
+        return _mapper.Map<Destination>(_accountRepository.Update(accountDestination));
+      }
+    }
+
+    Origin IAccountService.Withdraw(TransactionType type, string origin, string destination, decimal amount)
+    {
+      var accountOrigin = _accountRepository.GetAccount(origin);
+
+      if (accountOrigin == null)
+      {
+        return null;
+      }
+
+      if (accountOrigin.Balance > 0)
+      {
+        accountOrigin.Balance -= amount;
+
+        return _mapper.Map<Origin>(_accountRepository.Update(accountOrigin));
+      }
+      else
+      {
+
+      }
+
+
+      return null;
+
     }
   }
 }

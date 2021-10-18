@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Valter\\Documents\\GitHub\\EbExam\\EbanxExam.Domain\\EbanxExam.Domain.csproj": {}
+    "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Valter\\Documents\\GitHub\\EbExam\\EbanxExam.Domain\\EbanxExam.Domain.csproj": {
+    "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Valter\\Documents\\GitHub\\EbExam\\EbanxExam.Domain\\EbanxExam.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Domain.csproj",
         "projectName": "EbanxExam.Domain",
-        "projectPath": "C:\\Users\\Valter\\Documents\\GitHub\\EbExam\\EbanxExam.Domain\\EbanxExam.Domain.csproj",
+        "projectPath": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Domain.csproj",
         "packagesPath": "C:\\Users\\Valter\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Valter\\Documents\\GitHub\\EbExam\\EbanxExam.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Valter\\AppData\\Roaming\\NuGet\\NuGet.Config",

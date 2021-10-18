@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Valter\\Documents\\GitHub\\EbExam\\EbanxExam.Application\\EbanxExam.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Application\\EbanxExam.Application.csproj",
       "projectName": "EbanxExam.Application",
-      "projectPath": "C:\\Users\\Valter\\Documents\\GitHub\\EbExam\\EbanxExam.Application\\EbanxExam.Application.csproj",
+      "projectPath": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Application\\EbanxExam.Application.csproj",
       "packagesPath": "C:\\Users\\Valter\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Valter\\Documents\\GitHub\\EbExam\\EbanxExam.Application\\obj\\",
+      "outputPath": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Valter\\AppData\\Roaming\\NuGet\\NuGet.Config",

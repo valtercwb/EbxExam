@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "so12o/pQvXT/Y7rvIGdnVMv/nC6dsMi4a/HNrB68aickE9g9iX9DRK6ElJB+jsfolq5UqZOCPZ/dq+EiWC+M8A==",
+  "dgSpecHash": "hqWR7d5V02pa9noxXGmlWqJ/OagK27c/mquhvcsXvMo+JZ+9+R6Ts3DDjz6S3HYZLDwSpoCZJzKg8zZNrMaHxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Valter\\Documents\\GitHub\\EbExam\\EbanxExam\\EbanxExam.Api.csproj",
+  "projectFilePath": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam\\EbanxExam.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Valter\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.11\\microsoft.entityframeworkcore.5.0.11.nupkg.sha512",
     "C:\\Users\\Valter\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.11\\microsoft.entityframeworkcore.abstractions.5.0.11.nupkg.sha512",

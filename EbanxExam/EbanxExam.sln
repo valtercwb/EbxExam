@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EbanxExam.Api", "EbanxExam.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EbanxExam.Application", "..\EbanxExam.Application\EbanxExam.Application.csproj", "{CFF0E55F-4F4F-413A-A684-353C22BA47E3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EbanxExam.Domain", "..\EbanxExam.Domain\EbanxExam.Domain.csproj", "{530120D1-561D-43CE-8724-A38C114536D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EbanxExam.Data", "..\EbanxExam.Domain\EbanxExam.Data.csproj", "{530120D1-561D-43CE-8724-A38C114536D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

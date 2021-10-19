@@ -27,6 +27,11 @@ namespace EbanxExam
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
+      services.AddMvc().AddJsonOptions(options =>
+      {
+        options.JsonSerializerOptions.WriteIndented = true;
+      });
+
       services.AddScoped<IAccountService, AccountService>();
       services.AddScoped<IAccountRepository, AccountRepository>();
       services.AddDbContext<ApiContext>(opt => opt.UseInMemoryDatabase(databaseName: "EbanxExam"));
@@ -43,6 +48,7 @@ namespace EbanxExam
       });
       IMapper mapper = config.CreateMapper();
       services.AddSingleton(mapper);
+      services.AddControllers().AddNewtonsoftJson();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,7 +62,7 @@ namespace EbanxExam
       }
 
       app.UseRouting();
-
+      app.UseCors();
       app.UseAuthorization();
 
       app.UseEndpoints(endpoints =>

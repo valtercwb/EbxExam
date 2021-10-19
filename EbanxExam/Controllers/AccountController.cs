@@ -2,6 +2,7 @@
 using EbanxExam.Application.Interface;
 using EbanxExam.Application.Transients;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace EbanxExam.Controllers
 {
@@ -15,64 +16,100 @@ namespace EbanxExam.Controllers
       _accountService = accountService;
     }
 
-    [Route("/reset")]
-    [HttpGet]
-    public ActionResult Reset()
+    /// <summary>
+    /// Drops the database
+    /// </summary>
+    /// <returns></returns>
+    [Route("/reset"), Produces("text/plain")]
+    [HttpPost]
+    public IActionResult Reset()
     {
       _accountService.Reset();
 
-      return Ok();
+      return Ok(HttpStatusCode.OK.ToString());
     }
 
+    /// <summary>
+    /// Returns the balance by the user account identity id
+    /// </summary>
+    /// <param name="account_id"></param>
+    /// <returns></returns>
     [Route("/balance")]
     [HttpGet]
-    public ActionResult Balance(string accountId)
+    public ActionResult Balance(string account_id)
     {
-      var balance = _accountService.Balance(accountId);
+      var balance = _accountService.Balance(account_id);
 
       if (balance == null)
       {
-        return NotFound();
+        return NotFound(0);
       }
 
-      return Ok(new { balance });
+      return Ok(balance);
     }
 
+    /// <summary>
+    /// This endpoint accept three kinds of operations
+    /// which are defined by the type parameter: deposit, withdraw or transfer
+    /// </summary>
+    /// <param name="eventRequest"></param>
+    /// <returns></returns>
     [Route("/event")]
     [HttpPost]
-    public ActionResult Event(TransactionType type, string origin, string destination, decimal amount)
+    public ActionResult<EventRequest> Event(EventRequest eventRequest)
     {
-      var resposta = new Resposta();
+      var response = new Response();
 
-      switch (type)
+      switch (eventRequest.Type)
       {
         case TransactionType.deposit:
-          resposta.destination = _accountService.Deposit(type, origin, destination, amount);
-          if (resposta.destination == null)
+          if (string.IsNullOrEmpty(eventRequest.Destination))
           {
-            return NotFound();
+            return BadRequest();
           }
 
-          return Created("event", new { resposta.destination });
+          response.Destination = _accountService.Deposit(eventRequest.Type, eventRequest.Origin, eventRequest.Destination, eventRequest.Amount);
+
+          if (response.Destination == null)
+          {
+            return NotFound(0);
+          }
+
+          return Created("event", new { response.Destination });
+
         case TransactionType.withdraw:
-          resposta.origin = _accountService.Withdraw(type, origin, destination, amount);
-          if (resposta.origin == null)
+          if (string.IsNullOrEmpty(eventRequest.Origin))
           {
-            return NotFound();
+            return BadRequest();
           }
 
-          return Created("event", new { resposta.origin });
+          response.Origin = _accountService.Withdraw(eventRequest.Type, eventRequest.Origin, eventRequest.Destination, eventRequest.Amount);
+
+          if (response.Origin == null)
+          {
+            return NotFound(0);
+          }
+
+          return Created("event", new { response.Origin });
+
         case TransactionType.transfer:
-          resposta.Transfer = _accountService.Transfer(type, origin, destination, amount);
-          if (resposta.Transfer.Destination == null)
+
+          if (string.IsNullOrEmpty(eventRequest.Origin) || string.IsNullOrEmpty(eventRequest.Destination))
           {
-            return NotFound();
+            return BadRequest();
           }
 
-          return Created("event", new { resposta.Transfer.Destination, resposta.Transfer.Origin });
-        default:
-          return NoContent();
+          response.Transfer = _accountService.Transfer(eventRequest.Type, eventRequest.Origin, eventRequest.Destination, eventRequest.Amount);
 
+          if (response.Transfer == null || response.Transfer.Destination == null)
+          {
+            return NotFound(0);
+          }
+
+          return Created("event", new { response.Transfer.Origin, response.Transfer.Destination });
+
+        default:
+          return BadRequest();
       }
     }
   }

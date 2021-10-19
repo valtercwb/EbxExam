@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Domain.csproj": {
-                "projectPath": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Domain.csproj"
+              "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Data.csproj": {
+                "projectPath": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Data.csproj"
               }
             }
           }
@@ -47,6 +47,14 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[10.1.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [
@@ -68,12 +76,12 @@
         }
       }
     },
-    "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Domain.csproj": {
+    "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Domain.csproj",
-        "projectName": "EbanxExam.Domain",
-        "projectPath": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Data.csproj",
+        "projectName": "EbanxExam.Data",
+        "projectPath": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Data.csproj",
         "packagesPath": "C:\\Users\\Valter\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\obj\\",
         "projectStyle": "PackageReference",
@@ -104,9 +112,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.11, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [
@@ -155,8 +171,8 @@
               "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Application\\EbanxExam.Application.csproj": {
                 "projectPath": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Application\\EbanxExam.Application.csproj"
               },
-              "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Domain.csproj": {
-                "projectPath": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Domain.csproj"
+              "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Data.csproj": {
+                "projectPath": "C:\\Users\\Valter\\Documents\\GitHub\\EbxExam\\EbanxExam.Domain\\EbanxExam.Data.csproj"
               }
             }
           }
@@ -171,9 +187,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[5.0.11, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

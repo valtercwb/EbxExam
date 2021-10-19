@@ -14,13 +14,14 @@ C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\bin\Debug\net5.0\
 C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\bin\Debug\net5.0\EbanxExam.Application.dll
 C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\bin\Debug\net5.0\ref\EbanxExam.Application.dll
 C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\bin\Debug\net5.0\EbanxExam.Application.pdb
-C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\bin\Debug\net5.0\EbanxExam.Domain.dll
-C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\bin\Debug\net5.0\EbanxExam.Domain.pdb
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\bin\Debug\net5.0\EbanxExam.Data.dll
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\bin\Debug\net5.0\EbanxExam.Data.pdb
 C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\obj\Debug\net5.0\EbanxExam.Application.csproj.AssemblyReference.cache
 C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\obj\Debug\net5.0\EbanxExam.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\obj\Debug\net5.0\EbanxExam.Application.AssemblyInfoInputs.cache
 C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\obj\Debug\net5.0\EbanxExam.Application.AssemblyInfo.cs
 C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\obj\Debug\net5.0\EbanxExam.Application.csproj.CoreCompileInputs.cache
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\obj\Debug\net5.0\EbanxExam.Application.csproj.CopyComplete
 C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\obj\Debug\net5.0\EbanxExam.Application.dll
 C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\obj\Debug\net5.0\ref\EbanxExam.Application.dll
 C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Application\obj\Debug\net5.0\EbanxExam.Application.pdb

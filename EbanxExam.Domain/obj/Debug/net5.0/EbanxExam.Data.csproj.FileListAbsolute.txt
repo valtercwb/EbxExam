@@ -1,0 +1,11 @@
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\bin\Debug\net5.0\EbanxExam.Data.deps.json
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\bin\Debug\net5.0\EbanxExam.Data.dll
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\bin\Debug\net5.0\ref\EbanxExam.Data.dll
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\bin\Debug\net5.0\EbanxExam.Data.pdb
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\obj\Debug\net5.0\EbanxExam.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\obj\Debug\net5.0\EbanxExam.Data.AssemblyInfoInputs.cache
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\obj\Debug\net5.0\EbanxExam.Data.AssemblyInfo.cs
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\obj\Debug\net5.0\EbanxExam.Data.csproj.CoreCompileInputs.cache
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\obj\Debug\net5.0\EbanxExam.Data.dll
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\obj\Debug\net5.0\ref\EbanxExam.Data.dll
+C:\Users\Valter\Documents\GitHub\EbxExam\EbanxExam.Domain\obj\Debug\net5.0\EbanxExam.Data.pdb
